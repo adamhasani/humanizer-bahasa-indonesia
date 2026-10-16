@@ -51,12 +51,13 @@
 
 Sebagian besar "AI humanizer" online hanya bekerja seperti *article spinner* biasa: menukar kata dengan sinonim acak yang sering kali membuat kalimat menjadi rancu, atau hanya efektif untuk teks berbahasa Inggris.
 
-Detektor AI modern (Turnitin AI, GPTZero) dan dosen penguji tidak hanya melihat kata per kata, melainkan **pola keteraturan sintaksis (*burstiness & perplexity*)**, ketiadaan data empiris, dan struktur jawaban yang salah format. 
+Detektor AI modern (Turnitin AI, GPTZero, CopyLeaks) dan dosen penguji tidak hanya melihat kata per kata, melainkan **metrik statistik probabilistik (*burstiness & perplexity*)**, ketiadaan data empiris, dan struktur jawaban yang salah format. 
 
-**Humanizer Bahasa Indonesia** menyelesaikan ini melalui pendekatan tiga lapis:
-1. **Pembersihan Diksi & Sintaksis**: Membasmi kosakata klise AI (*"krusial"*, *"lanskap"*, *"transformatif"*), kalimat pasif birokratis berulang, dan konjungsi ritual di awal paragraf.
-2. **Standardisasi Format Dokumen**: Dosen langsung curiga jika laporan praktikum memakai bab skripsi. Repositori ini menyediakan 12 template baku yang memisahkan format diskusi singkat, esai, hingga skripsi 5 BAB.
-3. **Penegakan Kaidah Akademik Valid**: Menerapkan struktur piramida terbalik latar belakang, kesejajaran rumusan masalah dengan kesimpulan, matriks telaah pustaka terdahulu, dan panduan ejaan EYD V / PUEBI.
+**Humanizer Bahasa Indonesia** menyelesaikan ini melalui pendekatan empat lapis:
+1. **Rekayasa Burstiness & Perplexity**: Mengatur variasi panjang kalimat secara dinamis (rumus ritme 1-3-1: mengombinasikan kalimat pendek 3–7 kata dengan kalimat bertingkat 20–30 kata) agar lolos detektor statistik AI.
+2. **Alur Kerja 2-Tahap (Reflective Pass)**: AI diinstruksikan melakukan *silent self-correction* sebelum draf akhir disajikan guna mengeliminasi em dash (—), konjungsi ritual di awal alinea, dan pesan penutup chatbot.
+3. **Pilihan 4 Register Nada**: Membedakan gaya penulisan secara presisi antara Akademik Murni (EYD V), Profesional Korporat (metrik & ROI), Opini/Media (kritis & bernas), hingga Kasual (percakapan luwes).
+4. **Standardisasi Format Dokumen & Kaidah Akademik**: 12 template baku (T1–T12) dari forum diskusi hingga skripsi 5 BAB dengan kaidah piramida terbalik, bebas frasa birokratis klise (*"krusial"*, *"lanskap"*, *"dalam rangka guna"*).
 
 ---
 
@@ -232,25 +233,17 @@ python3 scripts/scan_ai_slop.py path/ke/dokumen_kamu.md
 
 ### Tampilan Output Scanner:
 ```text
-=================================================================
- HASIL PEMERIKSAAN POLA AI: skripsi_bab1.md
-=================================================================
-Total Kata           : 482
-Temuan Pola AI       : 14
-Kepadatan Pola AI    : 2.90 temuan / 100 kata
-Status               : [TERINDIKASI KUAT AI] Banyak klise dan frasa khas AI terdeteksi.
------------------------------------------------------------------
-
-* ID-2 (Kosakata AI Khas) (5 temuan):
-  - Baris 3: "krusial"
-    Saran: Ganti dengan 'penting' atau sebutkan dampak riilnya
-  - Baris 4: "lanskap"
-    Saran: Ganti dengan 'kondisi', 'situasi', atau 'lingkungan'
-
-* ID-4 (Konjungsi Awal Paragraf) (2 temuan):
-  - Baris 9: "Selain itu,"
-    Saran: Awali paragraf dengan kalimat topik substantif, bukan kata transisi
-=================================================================
+====================================================================
+ HASIL PEMERIKSAAN POLA AI & BURSTINESS: skripsi_bab1.md
+====================================================================
+Total Kata                 : 711
+Temuan Pola Klise AI       : 0
+Kepadatan Pola AI (Density): 0.00 temuan / 100 kata
+Rata-rata Panjang Kalimat  : 18.4 kata (Std Dev: 9.2)
+Skor Burstiness (CV)       : 0.50 -> [SANGAT DINAMIS] Ritme kalimat bervariasi alami (karakter tulisan manusia).
+--------------------------------------------------------------------
+Status Akhir               : [BERSIH & ALAMI] Naskah lolos indikator manusiawi.
+====================================================================
 ```
 
 ---
