@@ -152,7 +152,7 @@ BAB III PENUTUP: 3.1 Kesimpulan, 3.2 Saran
 Daftar Pustaka (5-10 sumber, urut abjad)
 ```
 
-Font TNR 12pt, spasi 1.5, margin 4-3-3-3 cm, halaman romawi di bagian awal.
+Font TNR 12pt, spasi 1.5, margin 4-4-3-3 cm (kiri 4 cm, atas 4 cm, kanan 3 cm, bawah 3 cm), halaman romawi di bagian awal.
 5-15 halaman. Makalah TANPA BAB itu salah format — ini yang membedakannya
 dari tugas mingguan.
 

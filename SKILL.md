@@ -180,11 +180,17 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 ---
 
-### 8. Penggunaan "Dalam Rangka" dan Frasa Birokratis Berlebihan
+## POLA KHAS AI BAHASA INDONESIA (ID-1 s/d ID-7)
+
+Observasi terhadap ribuan teks berbahasa Indonesia buatan ChatGPT, Claude, dan Gemini menunjukkan pola distingtif yang langsung dikenali dosen dan pembaca manusia:
+
+---
+
+### ID-1. Frasa Pengisi Birokratis Berlebihan
 
 **Frasa yang perlu diwaspadai:** dalam rangka (mencapai/meningkatkan/mewujudkan), guna (meningkatkan/memastikan), demi tercapainya, dalam upaya untuk, dalam konteks ini, dalam hal ini, terkait dengan hal tersebut, sehubungan dengan itu
 
-**Masalah:** AI sering menggunakan frasa birokratis panjang yang terdengar kaku dan formal secara berlebihan, padahal bisa disederhanakan.
+**Masalah:** AI gemar menyisipkan frasa formal panjang yang sering dipakai dalam surat dinas/birokrasi pemerintah. Hal ini membuat teks terdengar bertele-tele dan kaku tanpa menambah informasi.
 
 **Sebelum:**
 > Dalam rangka meningkatkan kualitas layanan publik, pemerintah daerah telah mengambil berbagai langkah strategis guna memastikan kepuasan masyarakat. Terkait dengan hal tersebut, berbagai program inovatif telah diluncurkan.
@@ -194,17 +200,45 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 ---
 
+### ID-2. Kosakata AI Klise dalam Bahasa Indonesia
+
+**Kata-kata yang perlu diwaspadai:** krusial, lanskap (secara kiasan), paradigma, holistik, komprehensif, transformatif, sinergi, selaras, permadani (kiasan), bukti abadi, menandai tonggak penting, tak terbantahkan, tak terelakkan, semarak
+
+**Masalah:** AI menggunakan kata-kata hasil terjemahan langsung dari frasa favorit AI bahasa Inggris (*crucial, landscape, tapestry, testament, milestone*). Kata-kata ini membuat teks terdengar seperti hasil *Google Translate* tingkat lanjut.
+
+**Sebelum:**
+> Bukti abadi pengaruh budaya Sunda adalah diadopsinya karedok secara luas dalam lanskap kuliner nasional, menampilkan bagaimana hidangan ini terintegrasi secara holistik ke dalam diet tradisional yang semarak.
+
+**Sesudah:**
+> Karedok, salad sayuran mentah dengan saus kacang khas Sunda, kini umum disajikan di berbagai kota di luar Jawa Barat.
+
+---
+
+### ID-3. Ketergantungan Formula "Tidak Hanya... Tetapi Juga..."
+
+**Frasa yang perlu diwaspadai:** tidak hanya... tetapi juga..., bukan sekadar... melainkan juga..., tak hanya... namun juga...
+
+**Masalah:** AI menggunakan antitesis paralel ganda secara berlebihan untuk memberi kesan analisis berbobot. Jika diulang di setiap paragraf, polanya terbaca sangat mekanis.
+
+**Sebelum:**
+> Sistem baru ini tidak hanya mempercepat proses pencatatan inventaris, tetapi juga meminimalisasi potensi terjadinya kesalahan manusia. Tidak hanya itu, ia juga berfungsi sebagai instrumen pengambil keputusan.
+
+**Sesudah:**
+> Sistem baru ini mempercepat pencatatan stok dan mengurangi kesalahan input data barang di gudang.
+
+---
+
 ### ID-4. Konjungsi Transisi di Setiap Awal Paragraf
 
-**Kata-kata yang perlu diwaspadai:** Selain itu,, Lebih lanjut,, Di sisi lain,, Kendati demikian,, Di samping itu,, Dengan demikian, (sebagai pembuka rutin)
+**Kata-kata yang perlu diwaspadai:** Selain itu,, Lebih lanjut,, Di sisi lain,, Kendati demikian,, Di samping itu,, Dengan demikian, (sebagai pembuka rutin paragraf)
 
-**Masalah:** AI membuka hampir setiap paragraf dengan konjungsi transisi yang sama. Manusia menyambung paragraf lewat isi kalimat, bukan kata sambung ritual.
+**Masalah:** AI hampir selalu membuka awal paragraf kedua dan seterusnya dengan konjungsi transisi yang sama. Manusia menyambung antarparagraf lewat kelanjutan ide/isi kalimat, bukan kata sambung ritual.
 
 **Sebelum:**
 > Selain itu, program pemerintah juga memberikan bantuan modal. Lebih lanjut, pelatihan UMKM diselenggarakan setiap bulan. Di sisi lain, akses permodalan masih menjadi kendala.
 
 **Sesudah:**
-> Program pemerintah juga memberikan bantuan modal, dan pelatihan UMKM digelar tiap bulan. Masalahnya akses permodalan: bank masih minta agunan yang tidak semua pelaku punya.
+> Program pemerintah mencakup bantuan modal dan pelatihan UMKM bulanan. Kendala utamanya adalah persyaratan agunan bank yang memberatkan pelaku usaha mikro.
 
 ---
 
@@ -212,13 +246,13 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 **Frasa yang perlu diwaspadai:** dapat dilakukan dengan cara..., perlu diperhatikan bahwa..., patut dicatat bahwa..., tidak dapat dipungkiri bahwa..., hal ini menunjukkan bahwa...
 
-**Masalah:** AI menumpuk kalimat pasif berimbuhan -an yang membingkai informasi tanpa menambah isinya.
+**Masalah:** AI menumpuk kalimat pasif berimbuhan yang membingkai informasi tanpa menambah substansi argumen.
 
 **Sebelum:**
 > Perlu diperhatikan bahwa pengolahan data dapat dilakukan dengan cara menggunakan aplikasi Excel. Patut dicatat bahwa aplikasi ini telah tersedia secara luas.
 
 **Sesudah:**
-> Data bisa diolah pakai Excel, yang sudah tersedia di mana-mana.
+> Data diolah menggunakan Excel karena format spreadsheet-nya mudah diintegrasikan dengan aplikasi lain.
 
 ---
 
@@ -226,27 +260,28 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 **Frasa yang perlu diwaspadai:** Oleh karena itu, penting bagi kita semua untuk..., senantiasa, Diharapkan ke depan semua pihak dapat bersinergi..., menuju Indonesia yang lebih baik, dengan begitu terciptalah generasi...
 
-**Masalah:** AI menutup esai tugas dengan seruan moral generik yang tidak terhubung ke isi.
+**Masalah:** AI menutup esai tugas dengan wejangan moral generik atau slogan utopis yang tidak terhubung dengan temuan analisis teknis.
 
 **Sebelum:**
-> Oleh karena itu, penting bagi kita semua untuk senantiasa menjaga lingkungan. Diharapkan ke depan semua pihak dapat bersinergi dalam mewujudkan lingkungan yang bersih dan sehat.
+> Oleh karena itu, penting bagi kita semua untuk senantiasa menjaga lingkungan. Diharapkan ke depan semua pihak dapat bersinergi dalam mewujudkan lingkungan yang bersih dan sehat demi masa depan bangsa yang gemilang.
 
 **Sesudah:**
-> Pilah sampah di rumah saja sudah mengurangi setengah volume sampah ke TPA, menurut data DLH 2023.
+> Pemilahan sampah organik sejak dari rumah tangga dapat mereduksi beban penumpukan di TPA hingga 40%, berdasarkan data audit Dinas Lingkungan Hidup 2023.
 
 ---
 
 ### ID-7. Judul Berpola Slogan Simetris
 
-**Masalah:** Judul dua bagian simetris dengan titik dua ("X: Fondasi Menuju Y", "Menjembatani Kesenjangan antara X dan Y"). Judul mahasiswa dan jurnal deskriptif dan spesifik.
+**Masalah:** Judul dua bagian simetris dengan titik dua ("X: Fondasi Menuju Y", "Menjembatani Kesenjangan antara X dan Y"). Judul mahasiswa dan jurnal ilmiah wajib deskriptif, lugas, dan spesifik.
 
 **Sebelum:**
 > Digitalisasi UMKM: Fondasi Menuju Ekonomi yang Inklusif dan Berkelanjutan
 
 **Sesudah:**
-> Penerapan Marketplace Digital pada UMKM Kuliner di Kota Bandung
+> Penerapan Marketplace Digital pada UMKM Kuliner di Kota Bandung: Analisis Peningkatan Omzet dan Efisiensi Pemasaran
 
 ---
+
 
 ### 9. Pengulangan Subjek yang Tidak Perlu (Synonym Cycling dalam BI)
 
@@ -260,17 +295,7 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 ---
 
-### 10. Penggunaan "Tidak Hanya... Tetapi Juga..." yang Berlebihan
 
-**Masalah:** AI terlalu sering menggunakan konstruksi "tidak hanya X, tetapi juga Y" dan variannya untuk terkesan komprehensif.
-
-**Sebelum:**
-> Acara ini tidak hanya menawarkan sesi keynote yang inspiratif, tetapi juga menyediakan kesempatan networking yang berharga. Peserta tidak sekadar belajar, mereka juga bertumbuh. Ini bukan hanya tentang ilmu, melainkan tentang koneksi.
-
-**Sesudah:**
-> Acara ini menggabungkan sesi keynote dan waktu networking antar sesi.
-
----
 
 ### 11. Tiga Serangkai yang Dipaksakan (Rule of Three)
 

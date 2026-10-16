@@ -30,6 +30,13 @@ Adaptasi Bahasa Indonesia dari [blader/humanizer](https://github.com/blader/huma
 git clone https://github.com/adamhasani/humanizer-bahasa-indonesia.git ~/.claude/skills/humanizer-id
 ```
 
+### Pasang Manual
+
+```bash
+mkdir -p ~/.claude/skills/humanizer-id
+cp -r SKILL.md references ~/.claude/skills/humanizer-id/
+```
+
 ### Cara pakai
 
 ```
@@ -98,6 +105,22 @@ Untuk tugas siswa/mahasiswa, skill menambahkan 3 lapisan di atas humanizer dasar
 1. **Template per jenis tugas (T1–T12)** — dosen mengenali jawaban yang "formatnya salah". Setiap template punya struktur, aturan header, dan batasan apa yang tidak boleh ada (misal: laporan praktikum TANPA BAB I/II).
 2. **4 Kaidah Emas struktur akademik** — sejajaran rumusan masalah ↔ tujuan ↔ kesimpulan; piramida latar belakang (fakta → masalah → gap → solusi); matriks penelitian terdahulu; pemisahan tegas hasil vs pembahasan.
 3. **Aturan teknis PUEBI + pedoman kampus** — "di" dipisah vs "di-" disambung, istilah asing miring, nomor halaman romawi/Arab, kutipan panjang, abstrak ≤250 kata.
+
+---
+
+## CLI Scanner: Deteksi Pola AI Otomatis
+
+Tersedia script Python mandiri tanpa dependensi untuk memeriksa naskah kamu sebelum diserahkan:
+
+```bash
+python3 scripts/scan_ai_slop.py path/ke/naskah_kamu.md
+```
+
+Fitur scanner:
+* Menghitung total kata, jumlah temuan pola AI, dan skor kepadatan AI (*AI Slop Density Score*).
+* Menampilkan nomor baris dan kutipan kalimat yang terindikasi kaku.
+* Memberikan rekomendasi perbaikan sesuai aturan ID-1 s.d. ID-7.
+* Contoh perbandingan sebelum dan sesudah humanisasi tugas skripsi dapat dilihat di [`examples/skripsi-bab1-before-after.md`](examples/skripsi-bab1-before-after.md).
 
 ---
 
