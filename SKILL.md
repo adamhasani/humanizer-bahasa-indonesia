@@ -459,6 +459,15 @@ Aturan keras tambahan untuk tugas:
 - Sebelum diserahkan: cek soal terbaca utuh, semua sub-soal terjawab,
   angka diverifikasi ulang, format sesuai template yang dipilih.
 
+---
+
+## PLACEHOLDER (bagian yang butuh isi user)
+
+Bagian yang tidak bisa diisi assistant (logo kampus, tanda tangan, data pribadi)
+TIDAK dikarang dan TIDAK dikosongkan diam-diam. Tandai dengan kotak putus-putus
+merah berisi instruksi jelas ("isi disini logo universitasmu"), maksimal 3-4 per
+dokumen, plus catatan daftar placeholder di akhir. Baca `references/placeholder.md`.
+
 ## Referensi
 
 Skill ini mengadaptasi [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), dikelola oleh WikiProject AI Cleanup, dan diperluas dengan pola AI khas Bahasa Indonesia berdasarkan observasi terhadap ribuan teks berbahasa Indonesia yang dihasilkan AI.
