@@ -116,6 +116,10 @@ Fork ini menambahkan lapisan **tugas akademik mahasiswa Indonesia** di atas skil
 | ID-1 | **Bureaucratic filler phrases** | "dalam rangka meningkatkan... guna memastikan... terkait dengan hal tersebut" | "untuk meningkatkan..." |
 | ID-2 | **AI vocabulary in Indonesian** | "holistik, komprehensif, transformatif, tak terbantahkan, berkelanjutan (abstract)" | Kata konkret yang lebih spesifik |
 | ID-3 | **"Tidak hanya... tetapi juga..." overuse** | "Ini tidak hanya X, tetapi juga Y. Bukan sekadar A, melainkan B." | Satu kalimat langsung |
+| ID-4 | **Konjungsi transisi rutin** | "Selain itu,... Lebih lanjut,... Di sisi lain,..." di setiap awal paragraf | Sambung lewat isi kalimat |
+| ID-5 | **Redundansi pasif formal** | "dapat dilakukan dengan cara..., perlu diperhatikan bahwa..., patut dicatat bahwa..." | Kalimat aktif langsung |
+| ID-6 | **Penutup moralistik/slogan** | "Oleh karena itu, penting bagi kita semua untuk senantiasa..." | Implikasi konkret, bukan seruan |
+| ID-7 | **Judul slogan simetris** | "X: Fondasi Menuju Y" | Judul deskriptif spesifik |
 
 ---
 

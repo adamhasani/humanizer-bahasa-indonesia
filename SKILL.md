@@ -194,6 +194,60 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 ---
 
+### ID-4. Konjungsi Transisi di Setiap Awal Paragraf
+
+**Kata-kata yang perlu diwaspadai:** Selain itu,, Lebih lanjut,, Di sisi lain,, Kendati demikian,, Di samping itu,, Dengan demikian, (sebagai pembuka rutin)
+
+**Masalah:** AI membuka hampir setiap paragraf dengan konjungsi transisi yang sama. Manusia menyambung paragraf lewat isi kalimat, bukan kata sambung ritual.
+
+**Sebelum:**
+> Selain itu, program pemerintah juga memberikan bantuan modal. Lebih lanjut, pelatihan UMKM diselenggarakan setiap bulan. Di sisi lain, akses permodalan masih menjadi kendala.
+
+**Sesudah:**
+> Program pemerintah juga memberikan bantuan modal, dan pelatihan UMKM digelar tiap bulan. Masalahnya akses permodalan: bank masih minta agunan yang tidak semua pelaku punya.
+
+---
+
+### ID-5. Redundansi Pasif Formal
+
+**Frasa yang perlu diwaspadai:** dapat dilakukan dengan cara..., perlu diperhatikan bahwa..., patut dicatat bahwa..., tidak dapat dipungkiri bahwa..., hal ini menunjukkan bahwa...
+
+**Masalah:** AI menumpuk kalimat pasif berimbuhan -an yang membingkai informasi tanpa menambah isinya.
+
+**Sebelum:**
+> Perlu diperhatikan bahwa pengolahan data dapat dilakukan dengan cara menggunakan aplikasi Excel. Patut dicatat bahwa aplikasi ini telah tersedia secara luas.
+
+**Sesudah:**
+> Data bisa diolah pakai Excel, yang sudah tersedia di mana-mana.
+
+---
+
+### ID-6. Kalimat Pembuka & Penutup Moralistik/Slogan
+
+**Frasa yang perlu diwaspadai:** Oleh karena itu, penting bagi kita semua untuk..., senantiasa, Diharapkan ke depan semua pihak dapat bersinergi..., menuju Indonesia yang lebih baik, dengan begitu terciptalah generasi...
+
+**Masalah:** AI menutup esai tugas dengan seruan moral generik yang tidak terhubung ke isi.
+
+**Sebelum:**
+> Oleh karena itu, penting bagi kita semua untuk senantiasa menjaga lingkungan. Diharapkan ke depan semua pihak dapat bersinergi dalam mewujudkan lingkungan yang bersih dan sehat.
+
+**Sesudah:**
+> Pilah sampah di rumah saja sudah mengurangi setengah volume sampah ke TPA, menurut data DLH 2023.
+
+---
+
+### ID-7. Judul Berpola Slogan Simetris
+
+**Masalah:** Judul dua bagian simetris dengan titik dua ("X: Fondasi Menuju Y", "Menjembatani Kesenjangan antara X dan Y"). Judul mahasiswa dan jurnal deskriptif dan spesifik.
+
+**Sebelum:**
+> Digitalisasi UMKM: Fondasi Menuju Ekonomi yang Inklusif dan Berkelanjutan
+
+**Sesudah:**
+> Penerapan Marketplace Digital pada UMKM Kuliner di Kota Bandung
+
+---
+
 ### 9. Pengulangan Subjek yang Tidak Perlu (Synonym Cycling dalam BI)
 
 **Masalah:** AI menghindari pengulangan kata dengan ganti sinonim berlebihan, yang justru membuat teks aneh dan tidak alami dalam Bahasa Indonesia.
