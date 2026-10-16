@@ -55,7 +55,8 @@ PATTERNS = {
         (r"\bbersinergi demi mewujudkan\b", "Ganti dengan rencana aksi operasional"),
         (r"\bmenuju masa depan yang lebih (?:cerah|baik)\b", "Tutup dengan implikasi empiris, bukan slogan utopis"),
     ],
-    "Format (Em Dash / Emojis)": [
+    "Format (Raw Markdown Headers / Em Dash / Emojis)": [
+        (r"^#{1,6}\s+.*$", "Hapus tag markdown (#, ##, ###); gunakan penomoran baku akademik (BAB I, 1.1)"),
         (r"—", "Ganti em dash (—) dengan koma, titik, atau restrukturisasi kalimat"),
         (r"[\U00010000-\U0010ffff]", "Hapus emoji dekoratif dari naskah akademik/formal"),
     ],

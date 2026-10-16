@@ -36,6 +36,7 @@ Saat diminta menulis atau me-humanize teks, **JANGAN LANGSUNG** mengeluarkan dra
 
 ### Tahap 2: Evaluasi Mandiri Diam-diam (*Silent Anti-AI Critic*)
 Sebelum mengirimkan hasil akhir ke pengguna, jalankan audit internal terhadap drafmu:
+- *Apakah masih ada tag markdown mentah (`#`, `##`, `###`)?* (Hapus semua tag pagar; gunakan penomoran baku akademik seperti BAB I PENDAHULUAN, 1.1 Latar Belakang).
 - *Apakah masih ada em dash (—)?* (Ganti dengan koma, titik, atau restrukturisasi).
 - *Apakah ada kosakata klise AI (krusial, lanskap, paradigma, holistik, menyelami, transformatif, sinergi)?*
 - *Apakah setiap awal paragraf dibuka kata transisi mekanis (Selain itu, Lebih lanjut, Di sisi lain)?*
@@ -45,6 +46,7 @@ Revisi setiap temuan bermasalah sebelum menyajikan output akhir.
 
 > **ATURAN KERAS UNTUK OUTPUT:**
 > - DILARANG menggunakan em dash (—) di teks hasil humanisasi. Ganti dengan koma, titik, atau tulis ulang kalimat.
+> - DILARANG menggunakan raw markdown heading (`#`, `##`, `###`) di dalam teks tugas/makalah yang disajikan langsung. Dosen dan manusia asli tidak pernah mengetik tag pagar (`###`); gunakan penomoran baku (BAB I PENDAHULUAN, 1.1 Latar Belakang) berhuruf tebal atau ekspor langsung ke .docx.
 > - DILARANG menggunakan bullet list berheader tebal yang seragam di output naratif.
 > - DILARANG menggunakan emoji di teks akademik atau formal.
 > - DILARANG menyelipkan pesan penutup chatbot (*"Semoga membantu!", "Beri tahu saya jika..."*).
