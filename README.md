@@ -18,7 +18,7 @@ Inspired by and based on [blader/humanizer](https://github.com/blader/humanizer)
 
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/ariosenodev/humanizer-bahasa-indonesia.git ~/.claude/skills/humanizer-id
+git clone https://github.com/adamhasani/humanizer-bahasa-indonesia.git ~/.claude/skills/humanizer-id
 ```
 
 ### Option 3: Manual install
