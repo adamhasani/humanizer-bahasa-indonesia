@@ -468,6 +468,16 @@ TIDAK dikarang dan TIDAK dikosongkan diam-diam. Tandai dengan kotak putus-putus
 merah berisi instruksi jelas ("isi disini logo universitasmu"), maksimal 3-4 per
 dokumen, plus catatan daftar placeholder di akhir. Baca `references/placeholder.md`.
 
+---
+
+## ATURAN TEKNIS PENULISAN (PUEBI + pedoman kampus)
+
+Sebelum menulis karya ilmiah formal, baca `references/aturan-teknis.md`.
+Poin paling sering dilanggar: "di" dipisah (di kampus) vs "di-" disambung
+(dipakai); istilah asing miring kecuali nama asing & akronim; nomor halaman
+romawi bawah-tengah (awal) / arab kanan-atas (isi); kesimpulan menjawab
+rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
+
 ## Referensi
 
 Skill ini mengadaptasi [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), dikelola oleh WikiProject AI Cleanup, dan diperluas dengan pola AI khas Bahasa Indonesia berdasarkan observasi terhadap ribuan teks berbahasa Indonesia yang dihasilkan AI.
