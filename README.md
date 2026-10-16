@@ -1,87 +1,55 @@
 # Humanizer Bahasa Indonesia
 
-A Claude skill that removes signs of AI-generated writing from Indonesian text, making it sound more natural and human.
+Skill yang menghapus tanda-tanda tulisan buatan AI dari teks Bahasa Indonesia — artikel, laporan bisnis, caption medsos, dan **tugas akademik siswa/mahasiswa** (diskusi, praktikum, makalah, skripsi, proposal, jurnal, KKN, tugas sekolah).
 
-Inspired by and based on [blader/humanizer](https://github.com/blader/humanizer) — a Claude Code skill for English text by [@blader](https://github.com/blader). This is an Indonesian-language adaptation that extends the original patterns with new ones specific to how AI writes in Bahasa Indonesia.
-
----
-
-## Installation
-
-### Option 1: Claude.ai Skills (Recommended)
-
-1. Download `humanizer-id.skill` from the [Releases](../../releases) page
-2. Go to **claude.ai → Settings → Skills**
-3. Upload or drag the `.skill` file
-
-### Option 2: Clone into Claude Code skills directory
-
-```bash
-mkdir -p ~/.claude/skills
-git clone https://github.com/adamhasani/humanizer-bahasa-indonesia.git ~/.claude/skills/humanizer-id
-```
-
-### Option 3: Manual install
-
-```bash
-mkdir -p ~/.claude/skills/humanizer-id
-cp SKILL.md ~/.claude/skills/humanizer-id/
-```
+Adaptasi Bahasa Indonesia dari [blader/humanizer](https://github.com/blader/humanizer), diperluas dengan [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) + pola khas AI berbahasa Indonesia hasil observasi.
 
 ---
 
-## Usage
-
-In Claude Code:
-
-```
-/humanizer-id
-
-[tempel teks kamu di sini]
-```
-
-Or ask Claude directly:
-
-```
-Tolong humanize teks ini: [teks kamu]
-```
-
-```
-Buat teks ini terdengar lebih natural dan tidak seperti AI
-```
-
----
-
-## Overview
-
-Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) guide (maintained by WikiProject AI Cleanup), adapted and extended for Bahasa Indonesia. The skill covers all 24 original English patterns, plus 9 new patterns specific to how AI writes in Indonesian.
-
-> "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
-
-Works across all writing contexts: articles/blogs, academic writing, business reports, and social media.
-
----
-
-## What's New (Fork Upgrade, Oktober 2026)
-
-Fork ini menambahkan lapisan **tugas akademik mahasiswa Indonesia** di atas skill humanizer dasar:
-
-- **12 template format dokumen** (`references/template-jawaban.md`) — struktur jawaban per jenis tugas: tugas mingguan (tanpa BAB), laporan praktikum, makalah (BAB I-III), skripsi (BAB I-V), proposal penelitian, artikel jurnal IMRAD, laporan observasi, laporan kasus, review pustaka, laporan magang/KKN, resume. Lengkap dengan aturan header, font, margin, dan kapan bab wajib/tidak.
-- **Sistem placeholder** (`references/placeholder.md`) — bagian yang hanya bisa diisi user (logo kampus, tanda tangan, data pribadi) ditandai kotak putus-putus merah berisi instruksi jelas, tidak dikarang dan tidak dikosongkan diam-diam. Maksimal 3-4 per dokumen.
-- **Aturan teknis penulisan** (`references/aturan-teknis.md`) — distilasi PUEBI + pedoman resmi kampus (FT UB, UNIKOM, UGM DTSL): margin standar, nomor halaman romawi/Arab, istilah asing italic, kesalahan ejaan umum ("di" dipisah vs "di-" disambung), dan kesalahan struktur yang paling sering dinilai dosen.
+## Isi Skill
 
 | File | Isi |
 |------|-----|
-| `SKILL.md` | Aturan inti humanizer + gaya mahasiswa + integrasi semua lapisan |
-| `references/template-jawaban.md` | 12 template format per jenis tugas |
-| `references/placeholder.md` | Sistem placeholder visual |
-| `references/aturan-teknis.md` | PUEBI + margin + nomor halaman + kesalahan umum |
+| `SKILL.md` | Aturan inti: 23 pola universal + 7 pola Indonesia (ID-1 s/d ID-7), gaya jawaban tugas, 4 Kaidah Emas struktur akademik |
+| `references/template-jawaban.md` | **12 template** format tugas (T1–T12): diskusi, latihan bernomor, praktikum, esai, resume, kode, makalah, skripsi, proposal, jurnal IMRAD, magang/KKN, tugas sekolah SMP/SMA |
+| `references/aturan-teknis.md` | PUEBI, margin, nomor halaman, sitasi, kesalahan struktur yang paling sering dinilai dosen |
+| `references/placeholder.md` | Tanda bagian yang hanya bisa diisi user (logo, tanda tangan, data pribadi) — tidak dikarang |
 
 ---
 
-## Patterns Detected
+## Cara Pasang
 
-### Universal Patterns (adapted from English)
+### Claude.ai (web)
+
+1. Download `humanizer-id.skill` dari [Releases](../../releases)
+2. **Settings → Skills → Upload** file `.skill`
+
+### Claude Code
+
+```bash
+git clone https://github.com/adamhasani/humanizer-bahasa-indonesia.git ~/.claude/skills/humanizer-id
+```
+
+### Cara pakai
+
+```
+/humanizer-id [tempel teks kamu]
+```
+
+atau langsung minta:
+
+```
+Tolong humanize teks ini: [teks]
+```
+```
+Kerjakan tugas ini dengan gaya mahasiswa: [soal/tugas]
+```
+
+---
+
+## Pola yang Dideteksi
+
+### Universal (adaptasi dari pola bahasa Inggris, 23 pola)
 
 | # | Pattern | Before | After |
 |---|---------|--------|-------|
@@ -109,13 +77,13 @@ Fork ini menambahkan lapisan **tugas akademik mahasiswa Indonesia** di atas skil
 | 22 | **Excessive hedging** | "bisa jadi mungkin dapat diargumentasikan bahwa... mungkin" | "kemungkinan berdampak pada" |
 | 23 | **Generic positive conclusions** | "Masa depan terlihat cerah. Waktu menggembirakan menanti..." | Rencana atau fakta spesifik |
 
-### Indonesian-Specific Patterns
+### Khas Bahasa Indonesia (7 pola)
 
 | # | Pattern | Before | After |
 |---|---------|--------|-------|
-| ID-1 | **Bureaucratic filler phrases** | "dalam rangka meningkatkan... guna memastikan... terkait dengan hal tersebut" | "untuk meningkatkan..." |
-| ID-2 | **AI vocabulary in Indonesian** | "holistik, komprehensif, transformatif, tak terbantahkan, berkelanjutan (abstract)" | Kata konkret yang lebih spesifik |
-| ID-3 | **"Tidak hanya... tetapi juga..." overuse** | "Ini tidak hanya X, tetapi juga Y. Bukan sekadar A, melainkan B." | Satu kalimat langsung |
+| ID-1 | **Frasa birokratis** | "dalam rangka meningkatkan... guna memastikan... terkait dengan hal tersebut" | "untuk meningkatkan..." |
+| ID-2 | **AI vocabulary Indonesia** | "holistik, komprehensif, transformatif, tak terbantahkan, berkelanjutan (abstrak)" | Kata konkret lebih spesifik |
+| ID-3 | **"Tidak hanya... tetapi juga..."** | "Ini tidak hanya X, tetapi juga Y. Bukan sekadar A, melainkan B." | Satu kalimat langsung |
 | ID-4 | **Konjungsi transisi rutin** | "Selain itu,... Lebih lanjut,... Di sisi lain,..." di setiap awal paragraf | Sambung lewat isi kalimat |
 | ID-5 | **Redundansi pasif formal** | "dapat dilakukan dengan cara..., perlu diperhatikan bahwa..., patut dicatat bahwa..." | Kalimat aktif langsung |
 | ID-6 | **Penutup moralistik/slogan** | "Oleh karena itu, penting bagi kita semua untuk senantiasa..." | Implikasi konkret, bukan seruan |
@@ -123,30 +91,38 @@ Fork ini menambahkan lapisan **tugas akademik mahasiswa Indonesia** di atas skil
 
 ---
 
-## Full Example
+## Lapisan Tugas Akademik
 
-**Before (AI-sounding):**
+Untuk tugas siswa/mahasiswa, skill menambahkan 3 lapisan di atas humanizer dasar:
 
-> Pertanyaan bagus! Pengkodean berbantuan AI merupakan bukti abadi dari potensi transformatif large language model, menandai momen penting dalam evolusi pengembangan perangkat lunak. Dalam lanskap teknologi yang terus berkembang pesat saat ini, alat-alat revolusioner ini—tersembunyi di persimpangan antara riset dan praktik—sedang membentuk ulang cara insinyur berideasi, menggarisbawahi peran vitalnya dalam alur kerja modern. Selain itu, kemampuan menghasilkan dokumentasi menampilkan bagaimana AI dapat berkontribusi pada hasil yang lebih baik, menyoroti keterkaitan intrinsik antara otomasi dan penilaian manusia. Dalam rangka mewujudkan potensi ini, tim harus sejalan dengan praktik terbaik. Masa depan terlihat cerah!
+1. **Template per jenis tugas (T1–T12)** — dosen mengenali jawaban yang "formatnya salah". Setiap template punya struktur, aturan header, dan batasan apa yang tidak boleh ada (misal: laporan praktikum TANPA BAB I/II).
+2. **4 Kaidah Emas struktur akademik** — sejajaran rumusan masalah ↔ tujuan ↔ kesimpulan; piramida latar belakang (fakta → masalah → gap → solusi); matriks penelitian terdahulu; pemisahan tegas hasil vs pembahasan.
+3. **Aturan teknis PUEBI + pedoman kampus** — "di" dipisah vs "di-" disambung, istilah asing miring, nomor halaman romawi/Arab, kutipan panjang, abstrak ≤250 kata.
 
-**After (Humanized):**
+---
+
+## Contoh
+
+**Before (terasa AI):**
+
+> Pertanyaan bagus! Pengkodean berbantuan AI merupakan bukti abadi dari potensi transformatif large language model, menandai momen penting dalam evolusi pengembangan perangkat lunak. Dalam lanskap teknologi yang terus berkembang pesat saat ini, alat-alat revolusioner ini sedang membentuk ulang cara insinyur berideasi, menggarisbawahi peran vitalnya dalam alur kerja modern. Masa depan terlihat cerah!
+
+**After (humanized):**
 
 > Asisten koding AI bisa bikin kamu lebih cepat di bagian-bagian yang membosankan. Bukan semuanya. Apalagi untuk arsitektur sistem.
 >
-> Bagusnya untuk boilerplate: file konfigurasi, scaffolding tes, refactor berulang. Jeleknya, mereka juga jago terdengar benar padahal salah. Saya pernah asal terima saran yang dikompilasi, lolos lint, tapi tetap miss the point karena saya tidak lagi memperhatikan.
+> Bagusnya untuk boilerplate: file konfigurasi, scaffolding tes, refactor berulang. Jeleknya, mereka juga jago terdengar benar padahal salah. Saya pernah asal terima saran yang dikompilasi, lolos lint, tapi tetap salah karena saya tidak lagi memperhatikan.
 >
 > Metrik produktivitasnya licin. Kalau tidak ada tes, kamu pada dasarnya nebak.
 
 ---
 
-## References
+## Referensi
 
-- [blader/humanizer](https://github.com/blader/humanizer) — The original English humanizer skill this is based on
-- [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — Primary source for all patterns
-- [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) — Maintaining organization
+- [blader/humanizer](https://github.com/blader/humanizer) — skill humanizer bahasa Inggris asli
+- [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — sumber utama pola universal
+- Pedoman penulisan resmi: FPsi UI, UIN Raden Fatah, UIN-SU, FT UB, UNIKOM, UGM DTSL, PUEBI (Permendikbud 50/2015)
 
----
-
-## License
+## Lisensi
 
 MIT
