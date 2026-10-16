@@ -39,6 +39,7 @@
 - [Katalog Pola yang Dideteksi](#katalog-pola-yang-dideteksi)
   - [Pola Khas AI Bahasa Indonesia (ID-1 s/d ID-7)](#pola-khas-ai-bahasa-indonesia-id-1-sd-id-7)
   - [Pola Universal (23 Pola)](#pola-universal-23-pola)
+- [Generator Word (.docx) Siap Cetak](#generator-word-docx-siap-cetak)
 - [CLI Scanner: Deteksi Pola AI Otomatis](#cli-scanner-deteksi-pola-ai-otomatis)
 - [Contoh Before vs After](#contoh-before-vs-after)
 - [Pertanyaan yang Sering Diajukan (FAQ)](#pertanyaan-yang-sering-diajukan-faq)
@@ -71,6 +72,7 @@ Detektor AI modern (Turnitin AI, GPTZero) dan dosen penguji tidak hanya melihat 
 │   ├── aturan-teknis.md                  # Panduan EYD V, margin 4-4-3-3, format tabel 3 garis, dan sitasi
 │   └── placeholder.md                    # Sistem visual penanda bagian wajib isi manual (logo, data mentah)
 ├── scripts/
+│   ├── export_docx.py                    # Generator Word .docx standar kampus (margin 4-4-3-3, zero-dependencies)
 │   └── scan_ai_slop.py                   # Script CLI mandiri untuk scan naskah (zero-dependencies)
 └── examples/
     └── skripsi-bab1-before-after.md      # Contoh bedah kasus draf latar belakang skripsi sebelum vs sesudah
@@ -195,6 +197,29 @@ Adaptasi dari panduan resmi [*Wikipedia: Signs of AI writing*](https://en.wikipe
 23. **Generic positive conclusions**: Kalimat penutup generik bertema harapan masa depan cerah.
 
 ---
+
+---
+
+## Generator Word (.docx) Siap Cetak
+
+Mahasiswa tidak mengumpulkan tugas ke dosen dalam format Markdown (`.md`), melainkan file **Microsoft Word (`.docx`)** yang rapi. 
+
+Repositori ini menyertakan script konverter mandiri (100% Python Standard Library, tanpa perlu `pip install`) yang otomatis memformat naskah sesuai standar pedoman akademik kampus:
+
+```bash
+# Konversi naskah markdown ke file Word .docx
+python3 scripts/export_docx.py tugas_kamu.md
+
+# Atau tentukan nama file output & custom margin (opsional)
+python3 scripts/export_docx.py tugas_kamu.md -o Makalah_Lengkap.docx --margin 4-4-3-3
+```
+
+### Standar Tipografi Otomatis:
+* **Ukuran Kertas & Margin**: A4 dengan margin baku **4-4-3-3 cm** (Kiri 4 cm, Atas 4 cm, Kanan 3 cm, Bawah 3 cm).
+* **Huruf & Spasi**: Times New Roman 12 pt, spasi 1.5 baris, perataan teks kanan-kiri (*Justified*).
+* **Alinea Baru**: Inden baris pertama otomatis 1.25 cm.
+* **Tabel Formal 3 Garis**: Tabel akademis standar tanpa garis vertikal penjara.
+* **Blok Kutipan Langsung**: Kutipan panjang (>4 baris) otomatis font 11 pt, spasi tunggal 1.0, dan inden masuk 1.25 cm.
 
 ## CLI Scanner: Deteksi Pola AI Otomatis
 
