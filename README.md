@@ -1,5 +1,8 @@
 # Humanizer Bahasa Indonesia
 
+[![Release](https://img.shields.io/github/v/release/adamhasani/humanizer-bahasa-indonesia)](https://github.com/adamhasani/humanizer-bahasa-indonesia/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Skill yang menghapus tanda-tanda tulisan buatan AI dari teks Bahasa Indonesia — artikel, laporan bisnis, caption medsos, dan **tugas akademik siswa/mahasiswa** (diskusi, praktikum, makalah, skripsi, proposal, jurnal, KKN, tugas sekolah).
 
 Adaptasi Bahasa Indonesia dari [blader/humanizer](https://github.com/blader/humanizer), diperluas dengan [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) + pola khas AI berbahasa Indonesia hasil observasi.
@@ -21,7 +24,7 @@ Adaptasi Bahasa Indonesia dari [blader/humanizer](https://github.com/blader/huma
 
 ### Claude.ai (web)
 
-1. Download `humanizer-id.skill` dari [Releases](../../releases)
+1. Download `humanizer-id.skill` dari [Releases](https://github.com/adamhasani/humanizer-bahasa-indonesia/releases)
 2. **Settings → Skills → Upload** file `.skill`
 
 ### Claude Code
