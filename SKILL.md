@@ -194,59 +194,6 @@ Menghindari pola AI hanya setengah dari pekerjaan. Tulisan yang steril dan tidak
 
 ---
 
-
-### ID-4. Konjungsi Transisi di Setiap Awal Paragraf
-
-**Kata-kata yang perlu diwaspadai:** Selain itu,, Lebih lanjut,, Di sisi lain,, Kendati demikian,, Di samping itu,, Dengan demikian, (sebagai pembuka rutin)
-
-**Masalah:** AI membuka hampir setiap paragraf dengan konjungsi transisi yang sama. Manusia menulis paragraf yang menyambung langsung lewat isi kalimat, bukan kata sambung ritual.
-
-**Sebelum:**
-> Selain itu, program pemerintah juga memberikan bantuan modal. Lebih lanjut, pelatihan UMKM diselenggarakan setiap bulan. Di sisi lain, akses permodalan masih menjadi kendala.
-
-**Sesudah:**
-> Program pemerintah juga memberikan bantuan modal, dan pelatihan UMKM digelar tiap bulan. Masalahnya akses permodalan: bank masih minta agunan yang tidak semua pelaku punya.
-
----
-
-### ID-5. Redundansi Pasif Formal
-
-**Frasa yang perlu diwaspadai:** dapat dilakukan dengan cara..., perlu diperhatikan bahwa..., patut dicatat bahwa..., tidak dapat dipungkiri bahwa..., hal ini menunjukkan bahwa...
-
-**Masalah:** AI menumpuk kalimat pasif berimbuhan -an yang membingkai informasi tanpa menambah isinya. Dosen yang mengoreksi banyak tugas mengenali pola ini instan.
-
-**Sebelum:**
-> Perlu diperhatikan bahwa pengolahan data dapat dilakukan dengan cara menggunakan aplikasi Excel. Patut dicatat bahwa aplikasi ini telah tersedia secara luas.
-
-**Sesudah:**
-> Data bisa diolah pakai Excel, yang sudah tersedia di mana-mana.
-
----
-
-### ID-6. Kalimat Pembuka & Penutup Moralistik/Slogan
-
-**Frasa yang perlu diwaspadai:** Oleh karena itu, penting bagi kita semua untuk..., senantiasa, Diharapkan ke depan semua pihak dapat bersinergi..., menuju Indonesia yang lebih baik, dengan begitu terciptalah generasi...
-
-**Masalah:** AI menutup esai tugas dengan seruan moral generik yang tidak terhubung ke isi. Ini tanda paling mudah dikenali dosen.
-
-**Sebelum:**
-> Oleh karena itu, penting bagi kita semua untuk senantiasa menjaga lingkungan. Diharapkan ke depan semua pihak dapat bersinergi dalam mewujudkan lingkungan yang bersih dan sehat.
-
-**Sesudah:**
-> Pilah sampah di rumah saja sudah mengurangi setengah volume sampah ke TPA, menurut data DLH 2023.
-
----
-
-### ID-7. Judul Berpola Slogan Simetris
-
-**Masalah:** AI membuat judul dua bagian simetris dengan titik dua: "X: Fondasi Menuju Y", "Menjembatani Kesenjangan antara X dan Y", "Membangun Z untuk Masa Depan yang Berkelanjutan". Judul mahasiswa (dan jurnal) biasanya deskriptif dan spesifik.
-
-**Sebelum:**
-> Digitalisasi UMKM: Fondasi Menuju Ekonomi yang Inklusif dan Berkelanjutan
-
-**Sesudah:**
-> Penerapan Marketplace Digital pada UMKM Kuliner di Kota Bandung
-
 ### 9. Pengulangan Subjek yang Tidak Perlu (Synonym Cycling dalam BI)
 
 **Masalah:** AI menghindari pengulangan kata dengan ganti sinonim berlebihan, yang justru membuat teks aneh dan tidak alami dalam Bahasa Indonesia.
@@ -536,3 +483,34 @@ rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
 Skill ini mengadaptasi [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), dikelola oleh WikiProject AI Cleanup, dan diperluas dengan pola AI khas Bahasa Indonesia berdasarkan observasi terhadap ribuan teks berbahasa Indonesia yang dihasilkan AI.
 
 Wawasan kunci: "LLM menggunakan algoritma statistik untuk menebak apa yang harus datang selanjutnya. Hasilnya cenderung ke arah hasil yang paling mungkin secara statistik yang berlaku untuk berbagai kasus seluas mungkin."
+---
+
+## 4 Kaidah Emas Struktur Penulisan Akademik Mahasiswa
+
+Dosen pembimbing dan penguji skripsi/makalah di Indonesia memiliki insting membaca yang terlatih untuk mendeteksi karya ilmiah hasil *generate* AI mentah. Terapkan 4 kaidah struktural ini:
+
+### 1. Segitiga Emas Kesejajaran (Rumusan Masalah ↔ Tujuan ↔ Kesimpulan)
+* Jika di **BAB I Rumusan Masalah** terdapat 3 pertanyaan:
+  1. Bagaimana rancang bangun sistem X?
+  2. Berapa tingkat akurasi model Y terhadap dataset Z?
+  3. Bagaimana kelayakan operasional sistem X di lingkungan kerja?
+* Maka di **BAB I Tujuan Penelitian** WAJIB ada 3 butir yang simetris (1:1).
+* Dan di **BAB V Kesimpulan** WAJIB menjawab ketiga pertanyaan tersebut secara berurutan dan konkret dengan angka temuan (bukan narasi mengambang atau kesimpulan filosofis).
+
+### 2. Struktur Piramida Terbalik Latar Belakang (BAB I)
+* **Tingkat 1 (Makro/Konteks)**: Fakta riil atau regulasi hukum yang mendasari (UU, PP, Permen, atau standar SNI/ISO). HINDARI pembuka klise AI: *"Di era digitalisasi dan globalisasi yang berkembang sangat pesat saat ini..."*.
+* **Tingkat 2 (Meso/Fokus Lapangan)**: Masalah spesifik yang terjadi di instansi/laboratorium/lapangan disertai data kuantitatif awal.
+* **Tingkat 3 (Mikro/Research Gap)**: Keterbatasan riset terdahulu (*state of the art*) atau kegagalan metode sebelumnya dalam menyelesaikan masalah tersebut.
+* **Tingkat 4 (Solusi & Urgensi)**: Metode/gagasan yang diajukan peneliti beserta alasan mengapa metode ini tepat diterapkan.
+
+### 3. Matriks Penelitian Terdahulu (BAB II)
+Mahasiswa asli selalu menyajikan telaah pustaka dalam bentuk **tabel matriks komparasi**:
+* Kolom: No | Peneliti & Tahun | Judul Penelitian | Metode / Algoritma | Hasil / Temuan Utama | Persamaan & Perbedaan (Kebaruan / *Research Gap*)
+* Setelah tabel, tulis 1-2 paragraf sintesis yang menegaskan posisi penelitian ini di antara penelitian-penelitian terdahulu tersebut.
+
+### 4. Pemisahan Tegas Hasil (Empiris) vs Pembahasan (Kritis) di BAB IV
+* **Hasil (Results)**: Menyajikan data objektif (tabel, kurva, nilai rata-rata, persentase, matriks konfusi, nilai *p-value*).
+* **Pembahasan (Discussion)**: BUKAN membaca ulang tabel, melainkan menjawab pertanyaan **"MENGAPA hasilnya demikian?"**:
+  * Apakah hasil ini sejalan atau membantah teori di BAB II?
+  * Bandingkan dengan temuan peneliti terdahulu (*"Hasil ini konsisten dengan temuan Santoso (2022), namun berbeda dari laporan Wijaya (2020) karena perbedaan resolusi sensor..."*).
+  * Apa keterbatasan yang memengaruhi hasil tersebut?

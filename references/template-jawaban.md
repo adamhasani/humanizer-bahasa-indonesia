@@ -97,104 +97,6 @@ sebutkan "kode lengkap di lampiran/file".
 
 ---
 
-
-## T7. Makalah (BAB I-III)
-
-```
-Sampul: logo, judul, nama+NIM, prodi, tahun. (placeholder bila belum ada logo)
-Kata Pengantar (1 halaman, singkat, tanda tangan penulis kanan bawah)
-Daftar Isi
-BAB I PENDAHULUAN: Latar Belakang, Rumusan Masalah (pertanyaan),
-  Tujuan, (opsional Manfaat)
-BAB II PEMBAHASAN / LANDASAN TEORI: sub-bab per tema, bukan daftar definisi
-BAB III PENUTUP: Kesimpulan (jawab rumusan masalah satu-satu) + Saran
-Daftar Pustaka: hanya sumber yang benar-benar dikutip
-```
-
-Aturan: rumusan masalah = pertanyaan, bukan pernyataan. Kesimpulan wajib
-menjawab tiap rumusan masalah. Nomor halaman: awal romawi kecil, isi arab.
-
----
-
-## T8. Skripsi (BAB I-V)
-
-```
-Halaman judul, Lembar Pengesahan, Pernyataan Orisinalitas, Abstrak (ID+EN),
-Kata Pengantar, Daftar Isi/Tabel/Gambar
-BAB I PENDAHULUAN: Latar Belakang (data/masalah nyata dulu, baru narasi),
-  Rumusan Masalah, Tujuan, Manfaat, Batasan
-BAB II TINJAUAN PUSTAKA: teori utama + penelitian terdahulu + kerangka
-  berpikir + hipotesis (kuantitatif) atau proposisi teori (kualitatif)
-BAB III METODE: desain, populasi/sampel atau informan, instrumen, teknik
-  analisis. Tulis seolah sudah bisa dieksekusi, bukan rencana idealis.
-BAB IV HASIL DAN PEMBAHASAN: data dulu, lalu analisis, lalu dikaitkan teori
-  BAB II. Pembahasan bukan pengulangan data.
-BAB V PENUTUP: Kesimpulan (menjawab rumusan masalah) + Saran (spesifik,
-  bukan "peneliti selanjutnya disarankan memperdalam")
-Daftar Pustaka + Lampiran
-```
-
-Aturan: setiap klaim di latar belakang butuh sitasi. Abstrak ditulis terakhir.
-
----
-
-## T9. Proposal Penelitian
-
-```
-Struktur = T8 BAB I-III saja, tanpa BAB IV-V.
-Judul: variabel/populasi jelas, bukan slogan ("Pengaruh X terhadap Y pada
-  Z" atau tema+lokasi untuk kualitatif).
-BAB I: latar belakang harus menunjukkan GAP (masalah nyata + belum ada
-  yang meneliti/hasil terdahulu bertentangan).
-BAB II: minimal 5 penelitian terdahulu dengan hasil, bukan hanya judul.
-BAB III: metode paling detail di seluruh proposal (instrumen + cara uji).
-Jadwal & anggaran jika diminta: tabel realistis, bukan dekorasi.
-```
-
-Ciri mahasiswa: ukuran sampel dihitung (rumus disebut), bukan "cukup
-representatif".
-
----
-
-## T10. Artikel Jurnal (IMRAD)
-
-```
-Judul: <= 14 kata, informatif, tanpa singkatan.
-Abstrak: 150-250 kata, satu paragraf, pola: tujuan-metode-hasil-kesimpulan.
-  Tanpa sitasi di abstrak.
-Pendahuluan (IMRAD: tanpa judul "BAB"): gap penelitian di 3-4 paragraf
-  pertama, diakhiri tujuan yang eksplisit.
-Metode: cukup detail agar direplikasi; sitasi instrumen.
-Hasil: angka/tabel/gambar dulu, tanpa interpretasi panjang.
-Pembahasan: interpretasi + bandingkan dengan penelitian terdahulu
-  (setuju/tentang, kenapa beda).
-Simpulan: 1 paragraf, tanpa angka baru, tanpa sitasi baru.
-Daftar Pustaka: gaya sesuai template jurnal target (APA/ Vancouver/ dsl.),
-  konsisten.
-```
-
-Ciri AI yang harus dibuang: abstrak yang berjualan ("studi ini memberikan
-kontribusi berharga"), pembahasan tanpa satu pun perbandingan.
-
----
-
-## T11. Laporan Magang / KKN / Observasi
-
-```
-Sampul + Lembar Pengesahan + Kata Pengantar + Daftar Isi
-BAB I PENDAHULUAN: latar belakang kegiatan, tujuan, waktu & tempat
-BAB II GAMBARAN UMUM: profil instansi/desa/objek observasi (fakta,
-  boleh dari dokumen resmi, sebutkan sumbernya)
-BAB III HASIL KEGIATAN / PEMBAHASAN: kronologis atau per kegiatan;
-  masukkan kejadian spesifik (nama hari, tanggal, kendala nyata)
-BAB IV PENUTUP: kesimpulan (apa yang didapat) + saran (untuk instansi,
-  bukan cuma untuk kampus)
-Lampiran: dokumentasi, logbook, surat
-```
-
-Ciri mahasiswa: ada detail "bau bau kampus" (kendala jadwal, narasumber
-ditolak, hujan) — laporan terlalu mulus justru mencurigakan.
-
 ## Red flags "bukan gaya mahasiswa" (cek sebelum submit)
 
 - Struktur terlalu seragam (semua jawaban panjangnya mirip)
@@ -210,3 +112,74 @@ ditolak, hujan) — laporan terlalu mulus justru mencurigakan.
 - Cocokkan tingkat formal: praktikum → formal kaku dikit; diskusi WA → santai
 - Ketidaksempurnaan kecil (pilihan kata kurang konsisten, kalimat pendek mendadak)
   itu NORMAL dan harus dipertahankan
+
+---
+
+## T7. Makalah (BAB I-III)
+
+```
+Sampul (logo + judul + nama/NIM + prodi + tahun)
+Kata Pengantar -> Daftar Isi
+BAB I PENDAHULUAN: 1.1 Latar Belakang, 1.2 Rumusan Masalah, 1.3 Tujuan
+BAB II PEMBAHASAN: sub-bab 2.1, 2.2, ... per topik
+BAB III PENUTUP: 3.1 Kesimpulan, 3.2 Saran
+Daftar Pustaka (5-10 sumber, urut abjad)
+```
+
+Font TNR 12pt, spasi 1.5, margin 4-3-3-3 cm, halaman romawi di bagian awal.
+5-15 halaman. Makalah TANPA BAB itu salah format — ini yang membedakannya
+dari tugas mingguan.
+
+## T8. Skripsi / Tugas Akhir (BAB I-V)
+
+```
+Bagian awal (romawi i, ii...): Halaman judul -> Lembar persetujuan ->
+Abstrak (ID+EN) -> Kata Pengantar -> Daftar Isi/Tabel/Gambar
+BAB I PENDAHULUAN (latar belakang, rumusan, tujuan, manfaat, batasan)
+BAB II TINJAUAN PUSTAKA (teori, penelitian terdahulu, kerangka pikir)
+BAB III METODE PENELITIAN (jenis, populasi/sampel, instrumen, analisis)
+BAB IV HASIL DAN PEMBAHASAN
+BAB V KESIMPULAN DAN SARAN
+Daftar Pustaka -> Lampiran
+```
+
+TNR 12pt, spasi 2.0 (isi) / 1.0 (tabel, kutipan panjang), margin 4-4-3-3 cm.
+Rumusan masalah <-> tujuan <-> kesimpulan WAJIB sejajar satu-satu.
+Selalu ikut pedoman resmi kampus kalau ada — tiap kampus beda detail.
+
+## T9. Proposal Penelitian
+
+```
+Sampul -> BAB I Pendahuluan -> BAB II Tinjauan Pustaka ->
+BAB III Metode Penelitian (desain, populasi/sampel, instrumen, analisis)
+-> Jadwal Penelitian (tabel bulan x kegiatan) -> Daftar Pustaka
+```
+
+Format skripsi TANPA BAB IV/V — penelitian belum jalan, jadi tidak ada
+hasil dan kesimpulan. Metode harus paling detail; itu yang dinilai.
+
+## T10. Artikel Jurnal (IMRAD)
+
+```
+Judul -> Nama (tanpa gelar) + afiliasi -> Abstrak 150-250 kata (ID+EN)
++ 3-5 kata kunci -> 1. Pendahuluan (state of the art + kebaruan) ->
+2. Metode -> 3. Hasil dan Pembahasan -> 4. Kesimpulan -> Daftar Pustaka
+```
+
+Sub-judul pakai ANGKA (1., 2., 3.), BUKAN "BAB I". TNR 10-12pt, spasi
+1.15-1.5, maksimal sekitar 7 halaman, referensi minimal 15, sitasi [1, 5]
+gaya Vancouver (urut kemunculan). Tanpa kata pengantar & daftar isi.
+
+## T11. Laporan Magang / KKN
+
+```
+Sampul -> Lembar persetujuan -> Kata Pengantar -> Daftar Isi
+BAB I Pendahuluan (latar, tujuan, waktu/tempat)
+BAB II Gambaran Umum (profil perusahaan/desa)
+BAB III Kegiatan (per tanggung jawab, BUKAN hari-per-hari)
+BAB IV Pembahasan (yang dipelajari, kendala, solusi)
+BAB V Penutup -> Lampiran (log book bertanda tangan, foto)
+```
+
+Mirip skripsi ringan. Log book bertanda tangan pembimbing lapangan sering
+jadi syarat nilai.
