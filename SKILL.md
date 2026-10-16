@@ -510,6 +510,7 @@ Baca `references/template-jawaban.md` lalu pilih template sesuai jenis tugas:
 | Proposal penelitian | T9 | struktur T8 BAB I-III saja, metode paling detail |
 | Artikel jurnal IMRAD | T10 | abstrak tujuan-metode-hasil, pembahasan banding terdahulu |
 | Magang/KKN/Observasi | T11 | profil instansi, kronologis kegiatan, lampiran dokumentasi |
+| Tugas sekolah (SMP/SMA) | T12 | identitas kelas+guru, pendahuluan-isi-penutup; makalah sekolah wajib kata pengantar |
 
 Aturan keras tambahan untuk tugas:
 - Satu template, dipakai konsisten. Campuran = mencurigakan.

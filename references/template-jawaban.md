@@ -97,6 +97,32 @@ sebutkan "kode lengkap di lampiran/file".
 
 ---
 
+## T12. Tugas Sekolah (SMP/SMA: laporan pengamatan, resume, makalah sekolah)
+
+```
+Laporan pengamatan/pengalaman (paling umum):
+  Identitas: Nama, Kelas, No. Absen, Nama guru/mapel, Tanggal (kadang kop sekolah)
+  Pendahuluan: 1 paragraf, apa yang diamati/dilakukan & kenapa
+  Isi: kronologis atau per poin pengamatan; detail konkret (tempat, jam, siapa)
+  Penutup: kesan + simpulan singkat, boleh 1 kritik/saran pribadi
+
+Resume/rangkuman materi:
+  Identitas + judul materi
+  Poin per bab/sub-bab buku paket, campuran bullet & kalimat
+  1-2 halaman, tulis tangan = seimbang rapi, bukan sempurna
+
+Makalah sekolah:
+  Sampul/kop sekolah, KATA PENGANTAR (wajib di sekolah: puji syukur,
+  tujuan, ucapan terima kasih ke guru, "penulis menyadari masih banyak
+  kekurangan..."), Daftar Isi
+  BAB I Pendahuluan (Latar Belakang + Rumusan Masalah), BAB II Pembahasan,
+  BAB III Penutup (Kesimpulan + Saran), Daftar Pustaka singkat
+```
+
+Ciri siswa asli: kata pengantar pakai frasa baku yang persis sama di semua
+sekolah ("Demikian makalah ini disusun..."), penutup mengandung opini pribadi
+("menurut saya bagian paling menarik adalah..."), dan ada ketidakkonsistenan
+kecil format antar halaman. Laporan terlalu rapi + tanpa opini = dicurigai.
 ## Red flags "bukan gaya mahasiswa" (cek sebelum submit)
 
 - Struktur terlalu seragam (semua jawaban panjangnya mirip)

@@ -59,3 +59,15 @@ Pedoman tiap kampus BEDA detailnya (posisi nomor halaman, mirror margin,
 penomoran sub-bab 2.1.1 atau A.B). Sebelum menulis dokumen besar (skripsi,
 laporan modul), kalau user kasih contoh/pedoman kampusnya, ikut itu. Aturan di
 file ini adalah default kalau tidak ada pedoman spesifik.
+
+## Tambahan dari pedoman resmi (UIN/Raden Fatah, UI Psi, UIN-SU)
+
+- Abstrak: maksimal 250 kata, 1 paragraf, spasi 1. Ditulis terakhir.
+- Kutipan panjang (>4 baris): spasi 1, menjorok 7 ketukan (~1,27 cm) dari
+  margin kiri, TANPA tanda petik. Sisipan dalam kutipan pakai kurung siku [...].
+- Kutipan >40 kata gaya APA juga menjorok tanpa petik, spasi 2.
+- Nama informan penelitian kualitatif yang berisiko diganti kode/inisial
+  (etika, bukan pilihan gaya).
+- Kata pengantar makalah sekolah: struktur baku (puji syukur, tujuan,
+  terima kasih ke guru, kalimat "penulis menyadari masih banyak kekurangan"),
+  ditandatangani "Penulis" dengan tempat+tanggal di atasnya.
