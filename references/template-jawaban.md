@@ -303,6 +303,11 @@ Aturan rendering (hasil nyata: PDF bagus rusak jadi gak kredibel):
   dibedakan dari kode (latar terminal hijau), dan tabel bergaris rapi
   ala Excel (header biru, zebra stripes, caption bawah). Kode di Markdown
   ditulis ```python, output ```output, biar CSS-nya nembak tepat.
+- Metadata: sebelum dikirim, jalankan `scripts/clean_metadata.py file.pdf
+  --author "Nama Mahasiswa"` — menghapus jejak producer/creator tool
+  (HeadlessChrome, Skia, python-docx, dsb) dan menggantinya dengan
+  Microsoft Word + nama user. Jejak tool di metadata dokumen adalah
+  penanda AI yang paling gampang dicek dosen (properti file).
 
 ---
 
