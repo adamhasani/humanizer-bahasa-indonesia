@@ -137,6 +137,7 @@ Dosen sangat sensitif terhadap format. Jangan pernah mengirim esai dengan format
 | **T10** | **Artikel Jurnal IMRAD** | Abstrak dwibahasa ($\le$250 kata), Introduction, Methods, Results, Discussion, Daftar Pustaka APA/IEEE. | Pembahasan bukan sekadar membaca ulang tabel. |
 | **T11** | **Laporan Magang / PKL / KKN** | Profil mitra instansi, deskripsi tupoksi, logbook kegiatan mingguan, kendala & solusi. | Tanpa keluhan personal; fokus pada refleksi profesional. |
 | **T12** | **Tugas Sekolah (SMP/SMA)** | Identitas siswa & guru pembimbing, format lugas, makalah sekolah wajib kata pengantar. | Hindari jargon perguruan tinggi yang belum diajarkan di sekolah. |
+| **T13** | **Tugas Teori + Simulasi Komputasi** | Teori per soal bernomor + bagian komputasi (seed, tabel simulasi vs teori, analisis galat sampling). | Angka tidak boleh dikarang; tabel dilarang ditulis sebagai heading. |
 
 *Rincian struktur dan contoh setiap template tersedia di [`references/template-jawaban.md`](references/template-jawaban.md).*
 
