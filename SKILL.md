@@ -607,6 +607,14 @@ Poin paling sering dilanggar: "di" dipisah (di kampus) vs "di-" disambung
 romawi bawah-tengah (awal) / arab kanan-atas (isi); kesimpulan menjawab
 rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
 
+## POLA VISUAL AI (design slop)
+
+Humanizer bukan cuma soal teks. Saat output berupa desain/landing page/slide,
+baca `references/visual-slop.md` dulu. Inti: hindari warna biru default
+(Tailwind blue-500), gradient ungu-biru, emoji-ikon, dan kartu seragam —
+semua itu signature "AI-made". Palet harus dari brand/konteks, bukan default
+framework.
+
 ## Referensi
 
 Skill ini mengadaptasi [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), dikelola oleh WikiProject AI Cleanup, dan diperluas dengan pola AI khas Bahasa Indonesia berdasarkan observasi terhadap ribuan teks berbahasa Indonesia yang dihasilkan AI.
