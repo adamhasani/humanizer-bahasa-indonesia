@@ -234,6 +234,46 @@ kecil format antar halaman. Laporan terlalu rapi + tanpa opini = dicurigai.
 
 ---
 
+## T13. Tugas Teori + Simulasi Komputasi (catatan teori & angka, bukan laporan praktikum)
+
+Untuk tugas matkul terapan (stokastik, statistika komputasi, ML) yang
+minta jawaban teori per soal DITAMBAH simulasi/angka:
+
+```
+Header ringkas: JUDUL TUGAS + nama · NIM (satu baris, tanpa sampul)
+BAGIAN 1: PEMBAHASAN TEORI (per soal bernomor 1, 2, 3...)
+  - Jawaban langsung per soal, definisi disisipkan dalam kalimat
+    (bukan kamus istilah), contoh konkret milik sendiri (server, antrean,
+    toko online — bukan contoh buku yang sama dengan teman sekelas).
+  - Soal analisis kasus: kasus → kenapa asumsi gugur → solusi teknis
+    (state yang diperluas, rumus pendek). Solusi ditulis konkret, bukan
+    "gunakan model yang lebih baik".
+BAGIAN 2: SIMULASI / KOMPUTASI
+  - 1 baris deskripsi eksperimen: jumlah lintasan/iterasi, langkah,
+    library, seed, parameter (p = 0,5 dsb). Seed boleh NIM sendiri.
+  - Kode inti (potongan yang jalan, bukan skrip penuh)
+  - Output eksekusi ASLI + tabel simulasi vs teori (rata-rata, ragam,
+    nilai teoretis) — angka dari run nyata, TIDAK dikarang meski
+    "seharusnya" mendekati teori.
+  - Gambar plot dengan caption bernomor (Gambar 1. ...)
+  - Analisis hasil: angka → cocok/tidak dengan teori → jelaskan MENGAPA
+    lewat sifat matematis (Var(Sn)=n, ketiadaan mean reversion, dst).
+```
+
+Ciri mahasiswa asli di tipe tugas ini:
+- Panjang jawaban teori TIDAK seragam antar nomor (soal yang dia paham
+  panjang, yang gak yakin pendek).
+- Angka simulasi sedikit menyimpang dari teori dan disebut wajar
+  ("selisih di bawah 1 persen, kecuali n=100 karena sampel 200"),
+  bukan cocok persis 100%.
+- Analisis akhir menjawab pertanyaan soal (mis. "kenapa tidak stasioner"),
+  bukan merangkum ulang seluruh tugas.
+- Red flag versi tipe ini: bold mekanis di awal tiap penjelasan
+  (**Pertama**, **Kedua**), kolom "Keterangan Evaluasi" berisi kalimat
+  generik per baris tabel, dan dua contoh aplikasi berparalel sempurna.
+
+---
+
 ## Red flags "bukan gaya mahasiswa" (cek sebelum submit)
 
 - Struktur terlalu seragam (semua jawaban panjangnya mirip)

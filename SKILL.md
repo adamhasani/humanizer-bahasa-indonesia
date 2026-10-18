@@ -574,6 +574,7 @@ Baca `references/template-jawaban.md` lalu pilih template sesuai jenis tugas:
 | Esai pendek | T4 | pembuka konteks, isi argumen, penutup posisi |
 | Resume materi | T5 | poin per sub-materi, 1-2 halaman |
 | Kode program | T6 | kode per bagian + output eksekusi asli + analisis |
+| Teori + simulasi | T13 | teori per soal + simulasi (seed, tabel vs teori) + analisis |
 | Makalah | T7 | sampul, kata pengantar, BAB I-III, daftar pustaka |
 | Skripsi | T8 | BAB I-V lengkap, kesimpulan jawab rumusan masalah |
 | Proposal penelitian | T9 | struktur T8 BAB I-III saja, metode paling detail |
