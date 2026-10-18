@@ -615,6 +615,15 @@ baca `references/visual-slop.md` dulu. Inti: hindari warna biru default
 semua itu signature "AI-made". Palet harus dari brand/konteks, bukan default
 framework.
 
+## POLA KODE & PERILAKU AI
+
+- Output kode: baca `references/code-slop.md` — hindari over-engineering,
+  nama generik, komentar narratif, boilerplate "for later". Kode harus
+  dieksekusi nyata sebelum diklaim jadi.
+- Perilaku & fakta: baca `references/interaksi-dan-fakta.md` — jangan nanya
+  izin berulang, jangan padding jawaban, dan DILARANG mengarang fakta/studi/
+  angka tanpa sumber yang dicek.
+
 ## Referensi
 
 Skill ini mengadaptasi [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), dikelola oleh WikiProject AI Cleanup, dan diperluas dengan pola AI khas Bahasa Indonesia berdasarkan observasi terhadap ribuan teks berbahasa Indonesia yang dihasilkan AI.
