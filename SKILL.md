@@ -588,6 +588,12 @@ Aturan keras tambahan untuk tugas:
 - Hasil angka/kode harus dari eksekusi nyata, bukan dikarang.
 - Sebelum diserahkan: cek soal terbaca utuh, semua sub-soal terjawab,
   angka diverifikasi ulang, format sesuai template yang dipilih.
+- T7 (Makalah), T8 (Skripsi), T9 (Proposal): struktur & gaya dari sini,
+  TETAPI penyusunan isi, uji statistik, dan QC akademik pakai skill
+  `proposal-skripsi` (bimajanuri) bila terpasang — pipeline BAB I-III,
+  stats_tests.py, quality gates. Hasil akhirnya WAJIB lewat humanizer
+  ini (pola AI-nya) sebelum dikirim. Dua skill itu komplementer, bukan
+  pengganti.
 
 ---
 
