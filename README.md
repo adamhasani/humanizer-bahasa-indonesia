@@ -286,6 +286,26 @@ Tidak. Script <code>scripts/scan_ai_slop.py</code> dibuat menggunakan modul bawa
 
 ---
 
+## Kompatibilitas: Proposal Skripsi Skill
+
+Untuk penyusunan **proposal/skripsi/thesis** (T7–T9), skill ini dirancang
+komplementer dengan [bimajanuri/proposal-skripsi-skill](https://github.com/bimajanuri/proposal-skripsi-skill):
+
+- **proposal-skripsi-skill** menangani substansi: pipeline BAB I–III,
+  uji statistik nyata dari dataset (`stats_tests.py`), klasifikasi file
+  sumber, preset pedoman kampus, ekspor DOCX, dan QC gates.
+- **Humanizer ini** menangani gaya: struktur template T7–T9, pembersihan
+  pola AI (23 universal + 7 ID), kaidah akademik, dan final pass
+  anti-deteksi.
+
+Alur yang disarankan: susun draf dengan `proposal-skripsi-skill` →
+humanisasi hasilnya dengan skill ini → scan dengan `scan_ai_slop.py`.
+Kedua skill tidak menduplikasi satu sama lain; bila keduanya terpasang,
+agent otomatis merujuk silang (lihat bagian "Aturan keras tambahan untuk
+tugas" di [SKILL.md](SKILL.md)).
+
+---
+
 ## Referensi & Pedoman
 
 * [blader/humanizer](https://github.com/blader/humanizer) — Proyek asli humanizer bahasa Inggris.
