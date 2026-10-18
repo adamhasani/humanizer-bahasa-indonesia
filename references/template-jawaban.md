@@ -278,16 +278,26 @@ Aturan rendering (hasil nyata: PDF bagus rusak jadi gak kredibel):
 - Tabel WAJIB tabel Markdown asli dengan header + garis `|---|`.
   DILARANG memakai heading (###) sebagai baris tabel — PDF converter
   merender angka jadi sub-judul dan hasilnya seperti parse error.
+- Kode WAJIB dalam fenced code block (```python ... ```). Kode yang
+  ditulis sebagai teks biasa akan di-reflow jadi satu paragraf acak
+  saat render (kasus nyata: `import numpy ... rng.choice(...)` jadi
+  kalimat kacau).
 - Persamaan ditulis dalam notasi ASCII yang tidak rusak saat konversi:
   `P(X_{t+1} | X_t)`, `Var(S_n) = n`, `m^1000`. Hindari LaTeX penuh
   ($...$, \frac) di pipeline yang tidak dirender KaTeX; kalau pipeline
   mendukung LaTeX, tetap tes hasil render sebelum kirim.
 - Jangan memotong kalimat di tengah baris/frasa matematis; angka
   subscript jangan terpisah dari induknya.
+- Struktur sumber yang terbukti rapi (target):
+  H1 judul tugas → baris "Mata kuliah Nama · NIM" → H2 per soal
+  bernomor → paragraf isi → H2 "BAGIAN B: KOMPUTASI" → 1 paragraf
+  setup eksperimen → tabel Markdown → analisis → H2 "Lampiran: Kode"
+  berisi fenced block → caption Gambar sebagai teks italic setelah
+  gambar.
 - Setelah generate PDF, WAJIB self-check: baca ulang teks PDF hasil
-  render, pastikan (a) tabel jadi tabel, (b) semua persamaan utuh,
-  (c) tidak ada kalimat kepotong. Kalau rusak, perbaiki sumber Markdown
-  bukan PDF-nya.
+  render, pastikan (a) tabel jadi tabel, (b) kode tetap per baris,
+  (c) semua persamaan utuh, (d) tidak ada kalimat kepotong. Kalau
+  rusak, perbaiki sumber Markdown bukan PDF-nya.
 
 ---
 
