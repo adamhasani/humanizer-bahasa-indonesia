@@ -34,7 +34,7 @@
   - [2. Claude Code (CLI)](#2-claude-code-cli)
   - [3. Instalasi Manual](#3-instalasi-manual)
   - [4. ChatGPT / Gemini / AI Lainnya](#4-chatgpt--gemini--ai-lainnya)
-- [12 Template Format Tugas (T1–T12)](#12-template-format-tugas-t1t12)
+- [13 Template Format Tugas (T1–T13)](#13-template-format-tugas-t1t13)
 - [4 Kaidah Emas Struktur Akademik](#4-kaidah-emas-struktur-akademik)
 - [Katalog Pola yang Dideteksi](#katalog-pola-yang-dideteksi)
   - [Pola Khas AI Bahasa Indonesia (ID-1 s/d ID-7)](#pola-khas-ai-bahasa-indonesia-id-1-sd-id-7)
@@ -57,7 +57,7 @@ Detektor AI modern (Turnitin AI, GPTZero, CopyLeaks) dan dosen penguji tidak han
 1. **Rekayasa Burstiness & Perplexity**: Mengatur variasi panjang kalimat secara dinamis (rumus ritme 1-3-1: mengombinasikan kalimat pendek 3–7 kata dengan kalimat bertingkat 20–30 kata) agar lolos detektor statistik AI.
 2. **Alur Kerja 2-Tahap (Reflective Pass)**: AI diinstruksikan melakukan *silent self-correction* sebelum draf akhir disajikan guna mengeliminasi em dash (—), konjungsi ritual di awal alinea, dan pesan penutup chatbot.
 3. **Pilihan 4 Register Nada**: Membedakan gaya penulisan secara presisi antara Akademik Murni (EYD V), Profesional Korporat (metrik & ROI), Opini/Media (kritis & bernas), hingga Kasual (percakapan luwes).
-4. **Standardisasi Format Dokumen & Kaidah Akademik**: 12 template baku (T1–T12) dari forum diskusi hingga skripsi 5 BAB dengan kaidah piramida terbalik, bebas frasa birokratis klise (*"krusial"*, *"lanskap"*, *"dalam rangka guna"*).
+4. **Standardisasi Format Dokumen & Kaidah Akademik**: 13 template baku (T1–T13) dari forum diskusi hingga skripsi 5 BAB dengan kaidah piramida terbalik, bebas frasa birokratis klise (*"krusial"*, *"lanskap"*, *"dalam rangka guna"*).
 
 ---
 
@@ -69,7 +69,7 @@ Detektor AI modern (Turnitin AI, GPTZero, CopyLeaks) dan dosen penguji tidak han
 ├── README.md                             # Panduan lengkap dokumentasi proyek
 ├── LICENSE                               # Lisensi open-source MIT
 ├── references/
-│   ├── template-jawaban.md               # Spesifikasi lengkap 12 template tugas (T1–T12)
+│   ├── template-jawaban.md               # Spesifikasi lengkap 13 template tugas (T1–T13)
 │   ├── aturan-teknis.md                  # Panduan EYD V, margin 4-4-3-3, format tabel 3 garis, dan sitasi
 │   └── placeholder.md                    # Sistem visual penanda bagian wajib isi manual (logo, data mentah)
 ├── scripts/
@@ -119,7 +119,7 @@ Kamu juga bisa menggunakannya di ChatGPT atau Gemini tanpa fitur skill:
 
 ---
 
-## 12 Template Format Tugas (T1–T12)
+## 13 Template Format Tugas (T1–T13)
 
 Dosen sangat sensitif terhadap format. Jangan pernah mengirim esai dengan format skripsi atau sebaliknya.
 

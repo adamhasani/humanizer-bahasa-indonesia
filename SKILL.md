@@ -70,7 +70,7 @@ Detektor AI modern (Turnitin, GPTZero, CopyLeaks) mendeteksi teks bukan sekadar 
 
 Pilihlah salah satu dari 4 register nada ini sesuai kebutuhan teks:
 
-### 1. Register Akademik Murni (Template T1–T12)
+### 1. Register Akademik Murni (Template T1–T13)
 * **Karakteristik:** Objektif, formal sesuai EYD V, kalimat berbasis bukti/data empiris, bebas sudut pandang orang pertama (*saya/kami* kecuali tugas reflektif/magang), mengutip rujukan yang kredibel.
 * **Pantangan:** Metafora berlebih, em dash, slang, judul berslogan.
 
