@@ -263,14 +263,31 @@ BAGIAN 2: SIMULASI / KOMPUTASI
 Ciri mahasiswa asli di tipe tugas ini:
 - Panjang jawaban teori TIDAK seragam antar nomor (soal yang dia paham
   panjang, yang gak yakin pendek).
-- Angka simulasi sedikit menyimpang dari teori dan disebut wajar
-  ("selisih di bawah 1 persen, kecuali n=100 karena sampel 200"),
-  bukan cocok persis 100%.
+- Angka simulasi sedikit menyimpang dari teori dan disebut wajar dengan
+  alasannya ("galat baku ±√(n/N)", "selisih di bawah 1 persen kecuali n=100
+  karena sampel 200"), bukan cocok persis 100%.
 - Analisis akhir menjawab pertanyaan soal (mis. "kenapa tidak stasioner"),
   bukan merangkum ulang seluruh tugas.
+- Pembuktian pendek konkrit (bandingkan P(...) pada dua state berbeda)
+  lebih baik daripada uraian formal panjang.
 - Red flag versi tipe ini: bold mekanis di awal tiap penjelasan
   (**Pertama**, **Kedua**), kolom "Keterangan Evaluasi" berisi kalimat
   generik per baris tabel, dan dua contoh aplikasi berparalel sempurna.
+
+Aturan rendering (hasil nyata: PDF bagus rusak jadi gak kredibel):
+- Tabel WAJIB tabel Markdown asli dengan header + garis `|---|`.
+  DILARANG memakai heading (###) sebagai baris tabel — PDF converter
+  merender angka jadi sub-judul dan hasilnya seperti parse error.
+- Persamaan ditulis dalam notasi ASCII yang tidak rusak saat konversi:
+  `P(X_{t+1} | X_t)`, `Var(S_n) = n`, `m^1000`. Hindari LaTeX penuh
+  ($...$, \frac) di pipeline yang tidak dirender KaTeX; kalau pipeline
+  mendukung LaTeX, tetap tes hasil render sebelum kirim.
+- Jangan memotong kalimat di tengah baris/frasa matematis; angka
+  subscript jangan terpisah dari induknya.
+- Setelah generate PDF, WAJIB self-check: baca ulang teks PDF hasil
+  render, pastikan (a) tabel jadi tabel, (b) semua persamaan utuh,
+  (c) tidak ada kalimat kepotong. Kalau rusak, perbaiki sumber Markdown
+  bukan PDF-nya.
 
 ---
 
