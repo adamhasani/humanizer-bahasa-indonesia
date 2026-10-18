@@ -298,6 +298,11 @@ Aturan rendering (hasil nyata: PDF bagus rusak jadi gak kredibel):
   render, pastikan (a) tabel jadi tabel, (b) kode tetap per baris,
   (c) semua persamaan utuh, (d) tidak ada kalimat kepotong. Kalau
   rusak, perbaiki sumber Markdown bukan PDF-nya.
+- Tampilan: pakai `references/render-style.css` — kode ter-highlight
+  ala VS Code (dark theme, Pygments/hljs), blok output eksekusi
+  dibedakan dari kode (latar terminal hijau), dan tabel bergaris rapi
+  ala Excel (header biru, zebra stripes, caption bawah). Kode di Markdown
+  ditulis ```python, output ```output, biar CSS-nya nembak tepat.
 
 ---
 

@@ -1,0 +1,39 @@
+# CSS Rendering: kode berwarna ala VS Code + tabel rapi ala Excel
+
+Pakai saat konversi Markdown → PDF (md-to-pdf, Pandoc, weasyprint, dsb).
+Simpan sebagai style.css dan daftarkan di pipeline. Bila pipeline sudah
+punya tema (mis. md-to-pdf default), cukup override bagian yang hilang.
+
+```css
+/* === Kode: syntax highlight ala VS Code (butuh Pygments/hljs di pipeline) ===
+   Jika pipeline pakai Pygments: pygmentize -S monokai -f html > pygments.css */
+pre { background: #1e1e1e; color: #d4d4d4; padding: 12px 14px;
+      border-radius: 6px; overflow-x: auto; font-size: 9pt;
+      font-family: 'JetBrains Mono', Consolas, monospace; line-height: 1.45; }
+code { font-family: 'JetBrains Mono', Consolas, monospace; }
+/* pygments class VS Code Dark+: keyword #C586C0, string #CE9178,
+   comment #6A9955, number #B5CEA8, func #DCDCAA, class #4EC9B0 */
+
+/* === Output eksekusi: beda dari kode, seperti terminal === */
+pre.output, .output { background: #0d1117; color: #7ee787;
+      border-left: 3px solid #30363d; font-style: normal; }
+/* Di Markdown, blok output ditulis ```output ... ``` atau
+   ```text setelah komentar "Hasil eksekusi:" agar bisa dibedakan dari kode. */
+
+/* === Tabel ala Excel: header bold, garis grid, zebra === */
+table { border-collapse: collapse; width: 100%; margin: 10px 0;
+        font-size: 9.5pt; }
+th, td { border: 1px solid #999; padding: 5px 10px; text-align: center; }
+th { background: #d9e2f3; font-weight: bold; }  /* header biru Excel */
+tr:nth-child(even) td { background: #f3f6fb; }  /* zebra stripes */
+caption { caption-side: bottom; font-style: italic; font-size: 8.5pt;
+          color: #444; margin-top: 4px; }
+```
+
+Aturan Markdown agar CSS ini bekerja:
+- Kode: ```python (bukan ``` tanpa bahasa) → pygments/hljs mengenali.
+- Output: ```output atau ```text di blok terpisah setelah kode.
+- Tabel: Markdown asli dengan |---|; caption pakai baris *Gambar/Table N. ...*
+  di bawah tabel (CSS caption-side kalaupun caption HTML dipakai).
+- Verifikasi: setelah render, cek kode berwarna (bukan hitam semua),
+  output beda latar dari kode, dan tabel bergaris + header berwarna.
