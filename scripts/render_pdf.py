@@ -13,15 +13,32 @@ import argparse, re, sys, pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent.parent
 
-def build(md_text: str, style: str) -> str:
+CSS_FILE = {'latex': 'render-style-latex.css',
+            'vscode': 'render-style.css',
+            'praktikum': 'render-style-praktikum.css'}
+
+KW = r'\b(def|if|elif|else|return|for|in|not|import|while|print|from|as|and|or|None|True|False)\b'
+
+def _hl(body: str) -> str:
+    body = body.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    body = re.sub(r'(#.*)$', r'<span class="com">\1</span>', body, flags=re.M)
+    body = re.sub(r'("[^"]*")', r'<span class="str">\1</span>', body)
+    body = re.sub(r'\b(\d[\d_.]*)\b', r'<span class="num">\1</span>', body)
+    body = re.sub(KW, r'<span class="kw">\1</span>', body)
+    return body
+
+def build(md_text: str, style: str, code_title: str = 'kode.py') -> str:
     import markdown
-    css = (HERE / 'references' / ('render-style-latex.css' if style == 'latex'
-                                   else 'render-style.css')).read_text()
-    # fenced code -> pre monokrom tanpa highlight (anti reflow ala Muse)
+    css = (HERE / 'references' / CSS_FILE[style]).read_text()
     def repl(m):
         lang, body = m.group(1), m.group(2)
-        cls = ' class="output"' if lang == 'output' else ''
-        return f'<pre{cls}><code>{body}</code></pre>'
+        if lang == 'output':
+            out = re.sub(r'^(--- .*)$', r'<span class="hdr">\1</span>', body, flags=re.M)
+            return f'<pre class="output"><code>{out}</code></pre>'
+        if style == 'praktikum':
+            return (f'<div class="editor"><div class="editor-title">{code_title}</div>'
+                    f'<pre><code>{_hl(body)}</code></pre></div>')
+        return f'<pre><code>{body}</code></pre>'
     md2 = re.sub(r'```(\w*)\n(.*?)```', repl, md_text, flags=re.S)
     body = markdown.markdown(md2, extensions=['tables'])
     return ('<html><head><meta charset="utf-8">'
@@ -42,7 +59,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('input'); ap.add_argument('-o', '--output', required=True)
     ap.add_argument('--author', default='Mahasiswa')
-    ap.add_argument('--style', default='latex', choices=['latex', 'vscode'])
+    ap.add_argument('--style', default='praktikum', choices=['latex', 'vscode', 'praktikum'])
+    ap.add_argument('--code-title', default='kode.py')
     ap.add_argument('--title')
     a = ap.parse_args()
 
@@ -51,10 +69,12 @@ def main():
         m = re.search(r'^#\s+(.+)', md_text, re.M)
         a.title = m.group(1) if m else pathlib.Path(a.input).stem
 
-    html = build(md_text, a.style)
+    html = build(md_text, a.style, a.code_title)
+    # gambar relatif diselesaikan terhadap folder file .md
+    base = str(pathlib.Path(a.input).resolve().parent)
     tmp = str(pathlib.Path(a.output).with_suffix('.raw.pdf'))
     from weasyprint import HTML
-    HTML(string=html, base_url='.').write_pdf(tmp)
+    HTML(string=html, base_url=base).write_pdf(tmp)
 
     from pypdf import PdfReader, PdfWriter
     r = PdfReader(tmp); w = PdfWriter()
