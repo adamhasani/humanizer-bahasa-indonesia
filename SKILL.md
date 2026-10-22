@@ -614,6 +614,15 @@ Poin paling sering dilanggar: "di" dipisah (di kampus) vs "di-" disambung
 romawi bawah-tengah (awal) / arab kanan-atas (isi); kesimpulan menjawab
 rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
 
+## PERSONA PENULISAN (variasi antar-dokumen)
+
+Sebelum menulis dokumen akademik baru, baca `references/personas.md`,
+pilih SATU persona (P1-P6) yang paling cocok jenis tugasnya, dan tulis
+seluruh dokumen dengan tekstur persona itu. Kerapian tetap wajib
+(nol typo, nol kalimat kepotong); yang divariasikan hanya panjang
+paragraf, kata transisi, dan penempatan bold. Kalau user mencontohkan
+gaya tulisannya sendiri, pakai gaya user, persona dilewati.
+
 ## POLA VISUAL AI (design slop)
 
 Humanizer bukan cuma soal teks. Saat output berupa desain/landing page/slide,
