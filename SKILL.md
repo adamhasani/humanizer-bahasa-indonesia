@@ -625,6 +625,11 @@ rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
   cadangan Crossref). Referensi yang tidak terverifikasi DILARANG
   dikutip. `cari` untuk mencari karya, `rujukan` untuk entri siap
   tempel gaya apa/ieee/bib.
+- `python3.12 scripts/metrik.py naskah.md --preset akademik` — metrik
+  gaya kuantitatif (variasi panjang kalimat, konektor/100 kata,
+  kata pemadat, em-dash, pola pembuka paragraf). Target: semua
+  indikator LULUS; em-dash maksimal 1 per halaman. Sumber:
+  adhiprib/humanizer-indonesia (MIT), ambang terkalibrasi korpus.
 - Keduanya stdlib murni, tanpa dependensi tambahan.
 
 ## PERSONA PENULISAN (variasi antar-dokumen)
