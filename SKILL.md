@@ -632,6 +632,23 @@ rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
   adhiprib/humanizer-indonesia (MIT), ambang terkalibrasi korpus.
 - Keduanya stdlib murni, tanpa dependensi tambahan.
 
+## REGISTER NON-AKADEMIK
+
+Pipeline yang sama berlaku untuk teks di luar tugas kuliah. Template
+T1-T13 DILEWATI; persona tetap dipilih, QC tetap dijalankan.
+
+- Konten publik (caption IG/TikTok, thread edukasi, artikel, newsletter):
+  persona P4/P5, metrik `--preset semiformal`. Scan sebelum posting.
+- Dokumen kerja (CV, surat lamaran, email formal ke dosen/kantor,
+  proposal kegiatan, deskripsi produk): persona P1/P3, metrik
+  `--preset akademik`. Em-dash dan pola AI paling kentara di sini.
+- Skrip video/TTS: tulis untuk didengar, bukan dibaca — kalimat lebih
+  pendek, tanpa struktur heading; metrik tetap dijalankan.
+- Pesan singkat (reply WA/DM): QC metrik dilewati (terlalu pendek),
+  cukup pola dari `references/interaksi-dan-fakta.md`.
+- Semua lapisan lain (render_pdf, clean_metadata, openalex) hanya untuk
+  dokumen yang di-render/disitasi, bukan caption atau pesan.
+
 ## PERSONA PENULISAN (variasi antar-dokumen)
 
 Sebelum menulis dokumen akademik baru, baca `references/personas.md`,
