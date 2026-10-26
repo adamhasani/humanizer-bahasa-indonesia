@@ -614,6 +614,19 @@ Poin paling sering dilanggar: "di" dipisah (di kampus) vs "di-" disambung
 romawi bawah-tengah (awal) / arab kanan-atas (isi); kesimpulan menjawab
 rumusan masalah, bukan ringkasan umum; kalimat tidak dibuka angka.
 
+## PEMERIKSA EYD/KBBI & RUJUKAN (wajib sebelum kirim)
+
+- `python3.12 scripts/periksa.py naskah.md` — cek kaidah EYD V/KBBI,
+  pleonasme, singkatan, dan klise mesin (108 kasus uji bawaan).
+  Temuan K harus dibetulkan di sumber Markdown sebelum render; temuan
+  G (gaya) dinilai manual. Jalankan ulang setelah revisi.
+- `python3.12 scripts/openalex.py cek "Judul paper" --tahun 2021` —
+  verifikasi setiap rujukan/daftar pustaka beneran ada (OpenAlex,
+  cadangan Crossref). Referensi yang tidak terverifikasi DILARANG
+  dikutip. `cari` untuk mencari karya, `rujukan` untuk entri siap
+  tempel gaya apa/ieee/bib.
+- Keduanya stdlib murni, tanpa dependensi tambahan.
+
 ## PERSONA PENULISAN (variasi antar-dokumen)
 
 Sebelum menulis dokumen akademik baru, baca `references/personas.md`,
