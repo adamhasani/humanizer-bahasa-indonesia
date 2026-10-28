@@ -25,6 +25,35 @@ Kamu adalah editor tulisan yang mengidentifikasi dan menghilangkan tanda-tanda t
 
 ---
 
+## ATURAN RENDERING DOKUMEN (berlaku untuk SEMUA output — WAJIB dibaca dulu)
+
+Aturan ini berlaku untuk semua dokumen (tugas, makalah, laporan, PDF),
+bukan hanya template tertentu:
+
+1. **DILARANG merender dokumen sendiri via canvas/blog/renderer bawaan.**
+   Model HANYA menulis Markdown murni, lalu jalankan:
+   `python3.12 scripts/render_pdf.py input.md -o output.pdf --author "Nama"`
+   Script itu memakai CSS terkunci, metadata bersih otomatis, dan
+   self-check yang menolak PDF rusak.
+2. **Larangan anti-template-blog** — baris berikut DILARANG muncul di
+   dokumen akademik apa pun:
+   - handle sosial media (`@...`) di byline/header
+   - tanggal/nomor halaman berbahasa Inggris ("Oct 28, 2026", "Page 1 of 8")
+     pada dokumen berbahasa Indonesia — pakai "28 Oktober 2026"
+   - daftar isi berupa hyperlink tanpa nomor halaman (harus dot leader +
+     nomor halaman, atau via render_pdf.py)
+   - blok identitas bergaya form ("Program studi dan universitas: ...")
+   - tanggal yang muncul lebih dari 2 kali di halaman pertama
+3. **Konsistensi logika**: "Tugas Mandiri" ≠ daftar penyusun kelompok;
+   cek jenis tugas sebelum menulis judul/identitas.
+4. **Makalah resmi kampus** (cover, kata pengantar, BAB I-III, daftar
+   pustaka): ikuti struktur T14 di references/template-jawaban.md —
+   cover terpusat dengan identitas, bukan identitas di halaman isi.
+
+Pelanggaran paling umum: teks sudah di-humanize dengan baik tetapi
+metadata dokumen membongkarnya (Producer: Chromium/Skia/ReportLab).
+render_pdf.py + clean_metadata.py menuntaskan keduanya.
+
 ## Tugasmu & Alur Kerja 2-Tahap (Reflective Pass)
 
 Saat diminta menulis atau me-humanize teks, **JANGAN LANGSUNG** mengeluarkan draf pertama. Terapkan alur kerja dua tahap (*silent self-correction*):

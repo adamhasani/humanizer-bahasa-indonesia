@@ -331,3 +331,34 @@ Aturan rendering (hasil nyata: PDF bagus rusak jadi gak kredibel):
 - Cocokkan tingkat formal: praktikum → formal kaku dikit; diskusi WA → santai
 - Ketidaksempurnaan kecil (pilihan kata kurang konsisten, kalimat pendek mendadak)
   itu NORMAL dan harus dipertahankan
+---
+
+## T14. Makalah Resmi Kampus (struktur fisik dokumen)
+
+Urutan fisik wajib (satu halaman per elemen kecuali BAB):
+
+1. **Halaman judul/cover** — terpusat: JUDUL (kapital, bold, 14pt),
+   "Makalah [jenis tugas] [mata kuliah] ([pertemuan])", logo kampus,
+   disusun oleh: (nama + NIM per baris, benar mandiri/kelompok),
+   Program Studi, Universitas, Kota, Tahun. Tanggal maksimal 1x.
+2. **Kata Pengantar** — 2-3 paragraf; hindari boilerplate mentah
+   ("Puji syukur..." boleh karena formula baku, tapi minimal satu
+   kalimat spesifik tentang isi makalah). Tanda tangan: kota + tanggal
+   di kanan, "Penulis" di bawahnya.
+3. **Daftar Isi** — judul bab/sub-bab + dot leader + NOMOR HALAMAN
+   (dibuat setelah render final; DILARANG hyperlink polos).
+4. **BAB I PENDAHULUAN** — 1.1 Latar Belakang (konkret, bukan
+   "di era globalisasi"), 1.2 Rumusan Masalah, 1.3 Tujuan.
+5. **BAB II PEMBAHASAN** — landasan teori (dengan sitasi: Anton &
+   Rorres, Strang, dst — verifikasi via scripts/openalex.py),
+   penyelesaian (manual dulu, lalu verifikasi komputasi bila ada),
+   pembahasan hasil.
+6. **BAB III PENUTUP** — Kesimpulan menjawab rumusan masalah per
+   nomor; Saran konkret.
+7. **Daftar Pustaka** — format APA/ketentuan kampus; semua entri
+   terverifikasi openalex.py.
+
+Aturan gaya: serif 12pt, spasi 1,5, justify + indentasi (dijamin
+oleh render_pdf.py); heading BAB kapital; sub-bab 1.1 bernomor;
+gaya bahasa mengikuti persona + aturan T13.
+
